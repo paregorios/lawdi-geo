@@ -2,6 +2,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix oac: <http://www.openannotation.org/ns/> .
 @prefix ass: <http://isaw.nyu.edu/people/staff/tom_elliott/assertions#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 <http://irt.kcl.ac.uk/irt2009/IRT264#this> a <http://www.w3.org/2006/03/wn/wn20/instances/synset-inscription-noun-1>;
     rdfs:label "Dedication to Asclepius";
@@ -9,11 +10,13 @@
     
 ass:a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> oac:Annotation;
     rdfs:label "mentions Nicomedia";
+    dcterms:coverage "Nicomedia";
     oac:hasBody <http://pleiades.stoa.org/places/511337/>;
     oac:hasTarget <http://irt.kcl.ac.uk/irt2009/IRT264#this> .
     
 ass:a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> oac:Annotation;
     rdfs:label "found at Lepcis Magna";
+    cdterms:coverage "Lepcis Magna";
     oac:hasBody <http://pleiades.stoa.org/places/344448/>;
     oac:hasTarget <http://irt.kcl.ac.uk/irt2009/IRT264#this> .
     

@@ -9,11 +9,11 @@
     
 ass:a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> oac:Annotation>;
     rdfs:label "mentions Nicomedia"
-    oac:hasBody <http://pleiades.stoa.org/places/874777>;
+    oac:hasBody <http://pleiades.stoa.org/places/511337/>;
     oac:hasTarget <http://irt.kcl.ac.uk/irt2009/IRT264#this> .
     
 ass:a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> oac:Annotation>;
     rdfs:label "found at Lepcis Magna"
-    oac:hasBody <http://pleiades.stoa.org/places/874777>;
+    oac:hasBody <http://pleiades.stoa.org/places/344448/>;
     oac:hasTarget <http://irt.kcl.ac.uk/irt2009/IRT264#this> .
     

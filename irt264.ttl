@@ -41,19 +41,20 @@ ass:a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> oac:Annotation;
 
 
 # ===========================================================================
-# other annotations of my own start
+# other assertions of my own start
 # ===========================================================================
 # here I'm attempting to capture the semantics that are implied by, but are
 # not to my mind explicit in, the OAC/Pelagios annotation above (plus some
 # additional special sauce
 
-ins:irt264 a <http://www.w3.org/2006/03/wn/wn20/instances/synset-inscription-noun-1>;
-    rdfs:label "Dedication to Asclepius";
-    foaf:primaryTopicOf <http://irt.kcl.ac.uk/irt2009/IRT264.html> . # sebheath hates this; seang points out it's what the linked data book says to do
+ins:irt264 a <http://www.w3.org/2006/03/wn/wn20/instances/synset-inscription-noun-1>;    # sebheath would say the type should be something like skos:definition because he doesn't like URIs for real world things
+    rdfs:label "Inscribed dedication to Asclepius";
+    foaf:primaryTopicOf <http://irt.kcl.ac.uk/irt2009/IRT264.html>; # sebheath hates this; seang points out it's what the linked data book says to do
+    rdfs:isDefinedBy <http://irt.kcl.ac.uk/irt2009/IRT264.html>; # sebheath prefers this
     gawd:findspot <http://pleiades.stoa.org/places/344448#this>;
     gawd:attestsTo <http://pleiades.stoa.org/places/511337#this> .
-    
-    # other annotations of my own end
+        
+    # other assertions of my own end
     
 # ===========================================================================
 # notes and questions

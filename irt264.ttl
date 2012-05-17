@@ -3,6 +3,8 @@
 @prefix oac: <http://www.openannotation.org/ns/> .
 @prefix ass: <http://isaw.nyu.edu/people/staff/tom_elliott/assertions#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ins: <http://inscription.es/> .
+@prefix gawd: <http://gawd.atlantides.org/terms/> .
 
 # ===========================================================================
 # about this file starts
@@ -38,6 +40,21 @@ ass:a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> oac:Annotation;
     # Pelagios annotation with OAC ends
 
 
+# ===========================================================================
+# other annotations of my own start
+# ===========================================================================
+# here I'm attempting to capture the semantics that are implied by, but are
+# not to my mind explicit in, the OAC/Pelagios annotation above (plus some
+# additional special sauce
+
+ins:irt264 a <http://www.w3.org/2006/03/wn/wn20/instances/synset-inscription-noun-1>;
+    rdfs:label "Dedication to Asclepius";
+    foaf:primaryTopicOf <http://irt.kcl.ac.uk/irt2009/IRT264.html> . # sebheath hates this; seang points out it's what the linked data book says to do
+    gawd:findspot <http://pleiades.stoa.org/places/344448#this>;
+    gawd:attestsTo <http://pleiades.stoa.org/places/511337#this> .
+    
+    # other annotations of my own end
+    
 # ===========================================================================
 # notes and questions
 # ===========================================================================

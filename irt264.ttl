@@ -1,0 +1,7 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://irt.kcl.ac.uk/irt2009/IRT264#this> a <http://www.w3.org/2006/03/wn/wn20/instances/synset-inscription-noun-1>;
+    rdfs:label "Dedication to Asclepius";
+    foaf:primaryTopicOf <http://irt.kcl.ac.uk/irt2009/IRT264.html>;
+    

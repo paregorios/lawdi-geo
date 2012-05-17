@@ -4,19 +4,53 @@
 @prefix ass: <http://isaw.nyu.edu/people/staff/tom_elliott/assertions#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-<http://irt.kcl.ac.uk/irt2009/IRT264#this> a <http://www.w3.org/2006/03/wn/wn20/instances/synset-inscription-noun-1>;
-    rdfs:label "Dedication to Asclepius";
-    foaf:primaryTopicOf <http://irt.kcl.ac.uk/irt2009/IRT264.html> .
-    
+# ===========================================================================
+# about this file starts
+# ===========================================================================
+#
+# The triples contained in this file are an attempt to make some semantic
+# assertions about a Roman inscription from Tripolitania. That inscription
+# was most recently published in the digital version of Joyce Reynold's 
+# Inscriptions of Roman Tripolitania at this URL:
+#
+#     http://irt.kcl.ac.uk/irt2009/IRT264.html
+#
+# No RDF was included with the publication, so we're just making assertions
+# from outside the publishing context.
+
+    # about this file ends
+
+
+# ===========================================================================
+# Pelagios annotation with OAC starts
+# ===========================================================================
+
 ass:a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> oac:Annotation;
     rdfs:label "mentions Nicomedia";
-    dcterms:coverage "Nicomedia";
     oac:hasBody <http://pleiades.stoa.org/places/511337>;
-    oac:hasTarget <http://irt.kcl.ac.uk/irt2009/IRT264#this> .
+    oac:hasTarget <http://irt.kcl.ac.uk/irt2009/IRT264.html> .
     
 ass:a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> oac:Annotation;
     rdfs:label "found at Lepcis Magna";
-    cdterms:coverage "Lepcis Magna";
     oac:hasBody <http://pleiades.stoa.org/places/344448>;
-    oac:hasTarget <http://irt.kcl.ac.uk/irt2009/IRT264#this> .
+    oac:hasTarget <http://irt.kcl.ac.uk/irt2009/IRT264.html> .
+    
+    # Pelagios annotation with OAC ends
+
+
+# ===========================================================================
+# notes and questions
+# ===========================================================================
+
+# it would be nice to be able to make some assertions about the inscription
+# itself and the relationship of the HTML edition against it, but without
+# IRT minting a URI for the inscription itself, the following can't be
+# done:
+# <http://irt.kcl.ac.uk/irt2009/IRT264#this> a <http://www.w3.org/2006/03/wn/wn20/instances/synset-inscription-noun-1>;
+#    rdfs:label "Dedication to Asclepius";
+#    foaf:primaryTopicOf <http://irt.kcl.ac.uk/irt2009/IRT264.html> .
+
+    # end notes and questions
+    
+    
     
